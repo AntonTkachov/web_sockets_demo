@@ -1,0 +1,6 @@
+.row
+  - [1, 2, 3].each do |number|
+    .col-md-4{class: "user#{number}"}
+      %ul{class: "user#{number}"}
+      %input{class: "user#{number}", type: 'text', name: "user#{number}"}
+      %a.btn.btn-default Отправить
